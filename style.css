@@ -10,8 +10,9 @@ body {
   line-height: 14px;
   color: #333136;
 }
-header {
+main {
   max-width: 1440px;
+  margin: 0 auto;
 }
 section {
   max-width: 1110px;
@@ -42,7 +43,7 @@ li a:hover {
 .header_logo {
   line-height: 0;
 }
-.frame {
+.fist_section {
   padding: 145px 0 0 95px;
   color: white;
   width: 100%;
@@ -51,15 +52,16 @@ li a:hover {
   background-repeat: no-repeat;
   background-position: bottom right;
   border-radius: 15px;
+  margin-bottom: 148px;
 }
-.frame h1 {
+.fist_section h1 {
   margin-bottom: 25px;
   width: 540px;
   font-size: 48px;
   font-weight: 500;
   line-height: 48px;
 }
-.frame p {
+.fist_section p {
   width: 445px;
   font-size: 16px;
   font-weight: 400;
@@ -80,4 +82,65 @@ li a:hover {
 .frame_button:hover {
   background: #ffad9b;
   color: white;
+}
+main {
+  background: url("./img/Rectangle.png"), url("./img/Rectangle\ Copy\ 4.png");
+  background-repeat: no-repeat;
+  background-position: left top 320px, right bottom;
+}
+.second_section {
+  display: flex;
+  gap: 30px;
+  color: white;
+}
+
+.second_section h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+
+.second_section a {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background-image: url("./img/Path\ 5.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 26px;
+}
+.second_section_item {
+  width: 541px;
+  height: 640px;
+}
+
+.left_item {
+  background: #664f87;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.right_item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.right_item div{
+  background: #664f87;
+  border-radius: 15px;
+  width: 541px;
+  height: 308px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
 }
