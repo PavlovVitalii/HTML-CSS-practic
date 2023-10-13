@@ -5,23 +5,43 @@
 }
 
 body {
-
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #333136;
 }
-
+header{
+   max-width: 1440px;
+}
 section {
   max-width: 1110px;
-  margin: 60px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin:0 auto;
+  height: 155px;
 }
 
-.logo_img{
-   line-height: 0;
-   height: 26;
-   width: 202;
+
+.logo_img {
+  line-height: 0;
+  height: 26;
+  width: 202;
 }
 
 nav li {
   display: inline-block;
+  margin-left: 42px;
+}
+a{
+    text-decoration: none;
+    color: #333136;
+}
+
+a:hover{
+    text-decoration: underline; 
+}
+
+.header-logo {
+  line-height: 0;
 }
