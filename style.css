@@ -115,6 +115,7 @@ main {
 .second_section_item {
   width: 541px;
   height: 640px;
+  margin-bottom: 160px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -123,7 +124,6 @@ main {
 .left_item {
   background-image: url("./img/Bitmap_1.png");
   border-radius: 15px;
- 
 }
 
 .right_item {
@@ -132,7 +132,7 @@ main {
   gap: 30px;
 }
 
-.right_item div{
+.right_item div {
   border-radius: 15px;
   width: 541px;
   height: 308px;
@@ -140,18 +140,18 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:30px;
+  gap: 30px;
 }
 
-.right_item__first{
+.right_item__first {
   background-image: url("./img/Bitmap_2.png");
 }
 
-.right_item__second{
+.right_item__second {
   background-image: url("./img/Bitmap_3.png");
 }
 
-.hover_item{
+.hover_item {
   width: 100%;
   height: 100%;
   border-radius: inherit;
@@ -160,8 +160,35 @@ main {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  transition: background 0.5s ease-in-out;
 }
 
-.hover_item:hover{
-background: rgba(231, 129, 107, 0.8);
+.hover_item:hover {
+  background: rgba(231, 129, 107, 0.8);
+}
+
+.three_section_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.three_section_container div {
+  text-align: center;
+  width: 350px;
+  min-height: 700px;
+}
+.three_section_container div h2 {
+  margin: 48px 0 32px 0;
+  padding: 0 74px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 5px;
+  word-wrap: break-word;
+}
+.three_section_container div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
 }
