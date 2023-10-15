@@ -94,7 +94,7 @@ main {
   color: white;
 }
 
-.second_section h1 {
+.second_section h2 {
   font-size: 40px;
   font-weight: 500;
   line-height: 48px;
@@ -115,16 +115,15 @@ main {
 .second_section_item {
   width: 541px;
   height: 640px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .left_item {
-  background: #664f87;
+  background-image: url("./img/Bitmap_1.png");
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+ 
 }
 
 .right_item {
@@ -134,7 +133,6 @@ main {
 }
 
 .right_item div{
-  background: #664f87;
   border-radius: 15px;
   width: 541px;
   height: 308px;
@@ -143,4 +141,27 @@ main {
   justify-content: center;
   align-items: center;
   gap:30px;
+}
+
+.right_item__first{
+  background-image: url("./img/Bitmap_2.png");
+}
+
+.right_item__second{
+  background-image: url("./img/Bitmap_3.png");
+}
+
+.hover_item{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.hover_item:hover{
+background: rgba(231, 129, 107, 0.8);
 }
