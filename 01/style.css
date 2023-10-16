@@ -29,7 +29,7 @@ section {
   height: 26;
   width: 202;
 }
-  li {
+li {
   display: inline-block;
   margin-left: 42px;
 }
@@ -237,7 +237,7 @@ footer {
   font-size: 16px;
   line-height: 26px;
 }
-.footer_container{
+.footer-container__menu {
   display: flex;
   justify-content: space-between;
   padding-bottom: 40px;
@@ -245,4 +245,77 @@ footer {
 }
 .footer_menu a {
   color: white;
+}
+.footer-container__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+}
+.footer-container__content__item {
+  width: 350px;
+  height: 78px;
+}
+
+.footer-container__content_text,
+.footer-container__content_text-2 {
+  color: rgb(255, 255, 255);
+  line-height: 26px;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.footer-container__content_text h2{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footer-container__content_text p {
+  font-weight: 400;
+}
+.footer-container__content_text-2 p {
+  font-weight: 700;
+  font-size: 16px;
+}
+.footer-container__content__item_logo {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 16px;
+}
+.footer-container__content__item_logo > a {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.footer-container__content__item_logo > a:nth-child(1){
+  background-image: url("./img/logo-facebook.svg");
+}
+.footer-container__content__item_logo > a:nth-child(2){
+  background-image: url("./img/logo-youtube.svg");
+}
+.footer-container__content__item_logo > a:nth-child(3){
+  background-image: url("./img/logo-twiter.svg");
+}
+.footer-container__content__item_logo > a:nth-child(4){
+  background-image: url("./img/logo-p.svg");
+}
+.footer-container__content__item_logo > a:nth-child(5){
+  background-image: url("./img/logo-instagram.svg");
+}
+.footer-container__content__item_logo > a:nth-child(1):hover{
+  background-image: url("./img/logo-facebook-h.svg");
+}
+.footer-container__content__item_logo > a:nth-child(2):hover{
+  background-image: url("./img/logo-youtube-h.svg");
+}
+.footer-container__content__item_logo > a:nth-child(3):hover{
+  background-image: url("./img/logo-twitter-h.svg");
+}
+.footer-container__content__item_logo > a:nth-child(4):hover{
+  background-image: url("./img/logo-p-h.svg");
+}
+.footer-container__content__item_logo > a:nth-child(5):hover{
+  background-image: url("./img/logo-instagrsm-h.svg");
 }
