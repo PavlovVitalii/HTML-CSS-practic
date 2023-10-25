@@ -305,6 +305,12 @@ footer {
   background-image: url("./img/logo-instagrsm-h.svg");
 }
 
+.web{
+  background: url("./img/Rectangle.png");
+  background-repeat: no-repeat;
+  background-position: left top 130px;
+}
+
 .web div.right_item {
   width: 100%;
   flex-direction: row;
@@ -316,6 +322,7 @@ main.web .touch {
   background-color: rgba(231, 129, 107, 1);
   background-image: url("./img/BacgroundImageWedTouch.png");
   flex-direction: column;
+  margin-bottom: 160px;
 }
 
 .web .touch h1 {
@@ -334,19 +341,32 @@ main.web .touch {
 }
 
 .web .works {
+  flex-wrap: wrap;
+  gap: 32px 30px;
 }
 
 .web .works__item {
   width: 350px;
   height: 478px;
-  background: #fdf3f0;
-  border-radius: 15px;
   flex-direction: column;
+  justify-content: space-between;
 }
 
+.works__item img {
+  border-radius: 15px 15px 0 0;
+}
+.works__item div {
+  background: #fdf3f0;
+  height: 158px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 0 0 15px 15px;
+  transition: background 0.5s ease-in-out;
+}
 .works__item h3 {
   color: #e7816b;
-  text-align: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 26px;
@@ -354,8 +374,18 @@ main.web .touch {
 .works__item p {
   width: 286px;
   color: #333136;
-  text-align: center;
   font-size: 16px;
   font-weight: 400;
+  text-align: center;
   line-height: 26px;
+}
+
+.works__item div:hover {
+  background: #e7816b;
+}
+.works__item div:hover h3 {
+  color: #fff;
+}
+.works__item div:hover p {
+  color: #fff;
 }
