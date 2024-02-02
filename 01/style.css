@@ -23,9 +23,12 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 .header_conteiner {
   justify-content: space-between;
   height: 155px;
+  max-width: 1100px;
+  margin: 0 auto ;
 }
 .logo_img {
   line-height: 0;
@@ -205,6 +208,7 @@ footer {
   background-repeat: no-repeat;
   background-position: right center;
   padding: 0 95px;
+  margin: 0 auto;
   column-gap: 310px;
 }
 .touch a {
@@ -220,6 +224,8 @@ footer {
   font-weight: 500;
   line-height: 40px;
   margin-bottom: 12px;
+  width: 268px;
+  height: 98px;
 }
 .touch__content p {
   font-size: 16px;
@@ -272,10 +278,12 @@ footer {
   height: 24px;
   background-repeat: no-repeat;
   background-position: center center;
+
 }
 
 .footer-container__content__item_logo > a:nth-child(1) {
   background-image: url("./img/logo-facebook.svg");
+ 
 }
 .footer-container__content__item_logo > a:nth-child(2) {
   background-image: url("./img/logo-youtube.svg");
@@ -305,7 +313,7 @@ footer {
   background-image: url("./img/logo-instagrsm-h.svg");
 }
 
-.web{
+.web {
   background: url("./img/Rectangle.png");
   background-repeat: no-repeat;
   background-position: left top 130px;
@@ -334,7 +342,10 @@ main.web .touch {
 }
 
 .web .touch p {
+  justify-content: center;
+  padding: 0 260px;
   color: white;
+  text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -343,9 +354,10 @@ main.web .touch {
 .web .works {
   flex-wrap: wrap;
   gap: 32px 30px;
+  justify-content: flex-start;
 }
 
-.web .works__item {
+.works__item {
   width: 350px;
   height: 478px;
   flex-direction: column;
@@ -371,6 +383,12 @@ main.web .touch {
   font-weight: 500;
   line-height: 26px;
 }
+
+/* .works__item h2 {
+  width: 268px;
+  height: 98px;
+  color: red;
+} */
 .works__item p {
   width: 286px;
   color: #333136;
@@ -389,3 +407,5 @@ main.web .touch {
 .works__item div:hover p {
   color: #fff;
 }
+
+/* APP PAGE */
